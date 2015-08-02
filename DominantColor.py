@@ -63,5 +63,5 @@ class DominantColor():
                 stop = True
                 rgb = ''.join(chr(int(c)) for index, c in enumerate(peak) if not index == 3)
                 dom_hex = "#%s" % rgb.encode('hex')
-                rgb = peak[:3]
+                rgb = tuple(peak[:3])
         return dom_hex, rgb

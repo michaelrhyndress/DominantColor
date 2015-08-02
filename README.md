@@ -18,4 +18,4 @@ For quick installation use pip
 #Attributes
 hex: returns a string hex color value
 
-rgb: returns a numpy.ndarray sequence
+rgb: returns a tuple in the format (R, G, B)
