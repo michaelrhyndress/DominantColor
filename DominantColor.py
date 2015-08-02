@@ -57,7 +57,7 @@ class DominantColor():
             index_max = argmax(counts)
             peak = self.codes[index_max]
             lumin = self.get_luminosity(peak)
-            if lumin > 225.0 or lumin < 35.0: # too light, too dark
+            if lumin > 200.0 or lumin < 35.0: # too light, too dark
                 self.codes = np_delete(self.codes,(index_max), axis=0)  #retry without that instance
             else:
                 stop = True
