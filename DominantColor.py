@@ -17,7 +17,7 @@ class DominantColor():
         orig_im = open(file)
         self.im = orig_im.resize((150, 150))# reduce time
         self.ar, self.codes = self.generate_scalar()
-        self.hex, self.rgb = self.get_dominate()
+        self.hex, self.rgb = self.get_dominant()
 
 
     def get_luminosity(self, row):
@@ -44,7 +44,7 @@ class DominantColor():
         return ar, codes
 
 
-    def get_dominate(self):
+    def get_dominant(self):
         """
         ensures that we don't throw out too dark, or light of images
         which are usually in the background of photos. This comes in
